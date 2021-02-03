@@ -16,6 +16,5 @@ int main(int ac, char **av)
     printf("List size: %d\n", my_list_size(list));
     my_show_list(list);
     my_free_list(&list);
-    printf("%p\n", list);
     return 0;
 }

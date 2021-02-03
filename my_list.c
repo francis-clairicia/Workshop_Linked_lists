@@ -77,7 +77,8 @@ void my_free_list(list_t **list)
     node_t *node_to_free = NULL;
 
     while (*list != NULL) {
+        node_to_free = *list;
         *list = (*list)->next;
-        free(*list);
+        free(node_to_free);
     }
 }
